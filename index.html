@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tim Riling Law</title>
+    <meta name="apple-mobile-web-app-title" content="Tim Riling Law" />
+    <meta name="description" content="Tim Riling Law. Serving Lawrence, KS. Areas of law include personal injury, workman's comp, DUI, and criminal law." />
+    <meta
+      name="keywords"
+      content="Tim Riling, Riling, Lawrence, KS, attorney, personal injury, workers compensation, DUI, criminal law, family law, general civic practice, insurance law, domestic relations"
+    />
+
+    <meta property="og:title" content="Tim Riling Law" />
+    <meta property="og:url" content="https://www.timrilinglaw.com" />
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/6455018/56474686-07575700-644b-11e9-8de0-3c9cdf971031.png"
+    />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta
+      property="og:description"
+      content="Tim Riling Law. Serving Lawrence, KS. Areas of law include personal injury, workman's comp, DUI, and criminal law."
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="container">
+    <main>
+      <nav class="nav">
+          <img src="https://user-images.githubusercontent.com/6455018/56474686-07575700-644b-11e9-8de0-3c9cdf971031.png" alt="Tim Riling logo" />
+          <h1>Tim Riling Law</h1>
+      </nav>
+      <section class="header">
+          <h1>Attorney Tim Riling</h1>
+          <p>Serving Lawrence, KS for 30+ years.</p>
+      </section>
+      <section class="about">
+        <section class="supporting">
+          <h1>Commited to representing our clients with friendly, experienced legal representation.</h1>
+        </section>
+        <section class="areas">
+          <h2>Areas of Law</h2>
+          <ul>
+              <li>personal injury</li>
+              <li>workers compensation</li>
+              <li>DUI</li>
+              <li>criminal law</li>
+              <li>family law</li>
+              <li>general civic practice</li>
+              <li>insurance law</li>
+              <li>domestic relations</li>
+          </ul>
+        </section>
+      </section>
+      <section class="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <div class="card">
+            <img src="https://twincitiesheadshots.com/wp-content/uploads/2018/03/Galleria-Dude-optimized-for-web.jpg" alt="portrait of tim riling" />
+            <div>
+              <h3>Tim Riling, Attorney</h3>
+              <p>
+                <a href="https://www.google.com/maps/dir//38.9576194,-95.3139934/@38.9570591,-95.3124711,16.63z">
+                  5040 Bob Billings Pkwy <br/>
+                  Lawrence, KS 66049 <br/>
+                </a>
+                <a href="tel:1-785-865-1600">(785) 865-1600</a>
+              </p>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </section>
+      <section class="review">
+        <div><h1>★★★★★</h1></div>
+        <h1>
+          "It took over three years to complete this claim, Tim was patient, kind, and truly concerned for my well-being. He re-defined my impression of lawyers!"
+        </h1>
+      </section>
+      <section class="footer">
+        <p>Tim Riling Law</p>
+        <p>&copy; <span id="year"></span>, all rights reserved.</p>
+      </section>
+    </main>
+    <script>
+    function initMap() {
+      var business = {lat: 38.9574777, lng: -95.3159312};
+      var map = new google.maps.Map(document.getElementById('map'), {zoom: 15, center: business});
+      var marker = new google.maps.Marker({position: business, map: map});
+    }
+
+    function getYear() {
+      const year = new Date().getFullYear();
+      document.getElementById('year').innerHTML = year;
+    }
+    getYear();
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRa9VMbp-ygu0Nsw32nYCNojNVO0-b3xI&callback=initMap">
+    </script>
+  </body>
+</html>
