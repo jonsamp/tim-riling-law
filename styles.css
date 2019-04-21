@@ -53,6 +53,12 @@ nav h1 {
   line-height: 3rem;
   font-size: 3rem;
   text-align: center;
+  margin: 0 2rem;
+}
+
+.header p {
+  text-align: center;
+  margin: 0 2rem;
 }
 
 .supporting,
@@ -160,7 +166,7 @@ nav h1 {
 
 .review h1 {
   max-width: 40rem;
-  line-height: 2.75rem;
+  line-height: 2.25rem;
   text-align: center;
 }
 
