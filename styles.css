@@ -93,7 +93,7 @@ nav h1 {
 }
 
 .areas li {
-  width: 33%;
+  width: 100%;
   padding: 1rem 1rem 1rem 0;
   min-width: 15rem;
   max-width: 30rem;
@@ -152,11 +152,22 @@ nav h1 {
   margin-bottom: 2rem;
 }
 
-.review {
+.review,
+.consultation {
   padding: 6rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.consultation {
+  background-color: #ebe4cf;
+  text-align: center;
+}
+
+.consultation a {
+  color: black;
+  text-decoration: underline;
 }
 
 .review > div > h1 {
@@ -186,6 +197,7 @@ nav h1 {
   .supporting,
   .contact,
   .review,
+  .consultation,
   .footer {
     padding: 2rem;
   }
