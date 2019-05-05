@@ -97,8 +97,8 @@ nav h1 {
   padding: 1rem 1rem 1rem 0;
   min-width: 15rem;
   max-width: 30rem;
-  text-transform: capitalize;
   font-size: 1.25rem;
+  padding-right: 4rem;
 }
 
 .contact {
@@ -137,8 +137,8 @@ nav h1 {
 }
 
 .card img {
-  width: 12rem;
-  height: 18rem;
+  width: 18rem;
+  height: 12rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
