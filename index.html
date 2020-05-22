@@ -50,7 +50,13 @@
       </nav>
       <section class="header">
         <h1>Attorney Tim Riling</h1>
-        <p>Serving Northeast and Central Kansas for over 30 years.</p>
+        <p style="margin-bottom: 1rem;">
+          Serving Northeast and Central Kansas for over 30 years.
+        </p>
+        <p>
+          5040 Bob Billings Pkwy Suite C-2
+        </p>
+        <p>Lawrence, KS 66049 (785) 865-1600</p>
       </section>
       <section class="about">
         <section class="supporting">
@@ -132,7 +138,7 @@
     <script>
       function initMap() {
         var business = { lat: 38.9574777, lng: -95.3159312 };
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById("map"), {
           zoom: 14,
           center: business,
         });
@@ -141,7 +147,7 @@
 
       function getYear() {
         const year = new Date().getFullYear();
-        document.getElementById('year').innerHTML = year;
+        document.getElementById("year").innerHTML = year;
       }
       getYear();
     </script>
