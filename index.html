@@ -121,7 +121,14 @@
                 </div>
               </div>
             </div>
-            <div id="map"></div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.8557063316784!2d-95.29123058464741!3d38.97296267955901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bf6e95536a12f1%3A0x1b591a18783d82fa!2sThe%20UPS%20Store!5e0!3m2!1sen!2sus!4v1641274489591!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -135,29 +142,15 @@
       </section>
       <section class="footer">
         <p>Tim Riling Law</p>
-        <p>&copy; <span id="year"></span> all rights reserved.</p>
+        <p>&copy; <span id="year"></span> All rights reserved.</p>
       </section>
     </main>
     <script>
-      function initMap() {
-        var business = { lat: 38.9574777, lng: -95.3159312 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: business,
-        });
-        var marker = new google.maps.Marker({ position: business, map: map });
-      }
-
       function getYear() {
         const year = new Date().getFullYear();
         document.getElementById('year').innerHTML = year;
       }
       getYear();
     </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG21ht1Qh-na4x_i_U_K6tEVBFvKC-ZtA&callback=initMap"
-    ></script>
   </body>
 </html>
