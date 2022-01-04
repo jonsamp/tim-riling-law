@@ -61,6 +61,11 @@ nav h1 {
   margin: 0 2rem;
 }
 
+.areas-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .supporting,
 .contact {
   background-image: url('https://user-images.githubusercontent.com/6455018/56475028-a6cb1880-6450-11e9-9dee-ea9f2e3621ab.png');
@@ -105,6 +110,11 @@ nav h1 {
   display: block;
   width: 100%;
   overflow: hidden;
+}
+
+.contact-contents {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .contact h2 {
