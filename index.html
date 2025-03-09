@@ -31,120 +31,151 @@
     <link rel="apple-touch-icon-precomposed" href="icon.png" />
     <link rel="icon" type="image/png" href="icon-small.png" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
 
-  <body class="container">
+  <body class="text-lg font-serif leading-6">
     <main>
-      <nav class="nav">
+      <nav class="py-3 px-6 bg-white flex items-center gap-3">
         <img
           src="https://user-images.githubusercontent.com/6455018/56474686-07575700-644b-11e9-8de0-3c9cdf971031.png"
           alt="Tim Riling logo"
+          class="w-10"
         />
-        <h1>Tim Riling Law</h1>
+        <h1 class="font-bold relative top-0.5 text-xl">Tim Riling Law</h1>
       </nav>
-      <section class="header">
-        <h1>Attorney Tim Riling</h1>
-        <p style="margin-bottom: 1rem">
+      <section
+        class="h-[40vh] relative bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80')] bg-cover bg-center before:absolute before:inset-0 before:bg-black/50 flex flex-col gap-3 justify-center items-center flex-col text-white text-shadow"
+      >
+        <img
+          src="./tim-riling.png"
+          alt="Portrait of Tim Riling"
+          class="w-32 h-32 rounded-full object-cover object-right border-4 border-white shadow-lg mb-4 relative z-10"
+        />
+        <h1 class="text-5xl font-bold relative z-10">Attorney Tim Riling</h1>
+        <p class="relative z-10">
           Serving Northeast and Central Kansas for over 30 years.
         </p>
-        <p>4000 W 6th St</p>
-        <p>Suite B Number 171</p>
-        <p>Lawrence, KS 66049</p>
-        <p>(785) 865-1600</p>
+        <p class="relative z-10">
+          <a href="tel:1-785-865-1600" class="text-white">(785) 865-1600</a>
+        </p>
       </section>
-      <section class="about">
-        <section class="supporting">
-          <h1>
+      <section>
+        <section class="bg-white flex justify-center items-center p-16">
+          <h2 class="text-2xl max-w-[40rem] text-center">
             Commited to representing our clients with friendly, experienced
             legal representation.
-          </h1>
+          </h2>
         </section>
-        <div class="areas-wrapper">
-          <section class="areas">
-            <h2>Areas of Law</h2>
-            <ul>
-              <li>Personal injury</li>
-              <li>Workers compensation</li>
-              <li>DUI and criminal</li>
-              <li>General civil litigationl</li>
-              <li>Domestic and landlord/tenant</li>
-            </ul>
-          </section>
-          <section class="areas">
-            <h2>Experience</h2>
-            <ul>
-              <li>
-                Graduate of Washburn Law School in Topeka 1987, Graduate of
-                Kansas University business administration 1985
-              </li>
-              <li>Judge Pro Tem Lawrence Municipal Court</li>
-              <li>Performed Mediation at attorneys request</li>
-              <li>Over a hundred jury or court trials</li>
-              <li>Member of Kansas Bar Association</li>
-              <li>
-                Handled cases/claims in Kansas, Missouri, Colorado, Indiana and
-                Illinois
-              </li>
-            </ul>
-          </section>
-        </div>
+        <section
+          class="bg-[url('https://user-images.githubusercontent.com/6455018/56475028-a6cb1880-6450-11e9-9dee-ea9f2e3621ab.png')] py-16"
+        >
+          <div class="max-w-[1200px] mx-auto px-6">
+            <div class="flex flex-wrap gap-8 justify-center">
+              <section
+                class="flex-1 bg-white py-8 px-10 rounded-lg shadow-lg min-w-[400px] border border-gray-200"
+              >
+                <h3 class="text-2xl font-bold mb-6">Areas of Law</h3>
+                <ul class="list-disc pl-5 space-y-3 text-lg">
+                  <li>Personal injury</li>
+                  <li>Workers compensation</li>
+                  <li>DUI and criminal</li>
+                  <li>General civil litigation</li>
+                  <li>Domestic and landlord/tenant</li>
+                </ul>
+              </section>
+              <section
+                class="flex-1 bg-white py-8 px-10 rounded-lg shadow-lg min-w-[400px] border border-gray-200"
+              >
+                <h3 class="text-2xl font-bold mb-6">Experience</h3>
+                <ul class="list-disc pl-5 space-y-3 text-lg">
+                  <li>
+                    Graduate of Washburn Law School in Topeka 1987, Graduate of
+                    Kansas University business administration 1985
+                  </li>
+                  <li>Judge Pro Tem Lawrence Municipal Court</li>
+                  <li>Performed Mediation at attorneys request</li>
+                  <li>Over a hundred jury or court trials</li>
+                  <li>Member of Kansas Bar Association</li>
+                  <li>
+                    Handled cases/claims in Kansas, Missouri, Colorado, Indiana
+                    and Illinois
+                  </li>
+                  <li>
+                    Performed mediation at the request of attorneys for both
+                    parties
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </section>
       </section>
-      <section class="consultation">
-        <h3>
-          Call <a href="tel:1-785-865-1600">(785) 865-1600</a> for a free
-          consultation for personal injury or workers compensation cases.
+      <section
+        class="py-24 flex items-center flex-col bg-[#ebe4cf] text-center"
+      >
+        <h3 class="text-xl">
+          Call
+          <a href="tel:1-785-865-1600" class="text-black underline"
+            >(785) 865-1600</a
+          >
+          for a free consultation for personal injury or workers compensation
+          cases.
         </h3>
       </section>
-      <section class="contact">
-        <div class="contact-contents">
-          <h2>Contact</h2>
-          <div class="contact-container">
-            <div class="card">
-              <div class="tim">
-                <img src="./TimGarden.jpg" alt="portrait of tim riling" />
+      <section
+        class="bg-[url('https://user-images.githubusercontent.com/6455018/56475028-a6cb1880-6450-11e9-9dee-ea9f2e3621ab.png')] py-16"
+      >
+        <div class="max-w-[1200px] mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-12 text-center">Contact</h2>
+          <div
+            class="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto border border-gray-200"
+          >
+            <div class="flex flex-wrap gap-8 items-start">
+              <img
+                src="./tim-riling.png"
+                alt="portrait of tim riling"
+                class="w-60 h-48 object-cover rounded-lg shadow-md"
+              />
+              <div class="flex-1 min-w-[280px] space-y-6">
                 <div>
-                  <h3>Tim Riling, Attorney</h3>
-                  <p>
-                    Phone:<br />
-                    <a href="tel:1-785-865-1600">(785) 865-1600</a>
-                  </p>
-                  <p>
-                    Mailing address only: <br />
-                    <a href="https://g.page/UPSstore5941?share">
-                      4000 W 6th St <br />
-                      Suite B Number 171 <br />
-                      Lawrence, KS 66049 <br />
-                    </a>
-                  </p>
+                  <h3 class="text-2xl font-bold mb-2">Tim Riling</h3>
+                  <p class="text-gray-600 text-lg">Attorney at Law</p>
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Phone</p>
+                  <a href="tel:1-785-865-1600" class="text-lg text-gray-600"
+                    >(785) 865-1600</a
+                  >
+                </div>
+                <div>
+                  <p class="font-semibold mb-1">Mailing Address Only</p>
+                  <address class="not-italic text-gray-600">
+                    4000 W 6th St<br />
+                    Suite B Number 171<br />
+                    Lawrence, KS 66049
+                  </address>
                 </div>
               </div>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.8557063316784!2d-95.29123058464741!3d38.97296267955901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bf6e95536a12f1%3A0x1b591a18783d82fa!2sThe%20UPS%20Store!5e0!3m2!1sen!2sus!4v1641274489591!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
           </div>
         </div>
       </section>
-      <section class="review">
-        <div><h1>★★★★★</h1></div>
-        <h1>
+      <section class="py-32 flex items-center flex-col px-6">
+        <div>
+          <h1 class="text-[goldenrod] tracking-[0.5rem] text-4xl mb-6">
+            ★★★★★
+          </h1>
+        </div>
+        <h1 class="max-w-[40rem] leading-relaxed text-center text-2xl italic">
           "It took over three years to complete this claim, Tim was patient,
           kind, and truly concerned for my well-being. He re-defined my
           impression of lawyers!"
         </h1>
       </section>
-      <section class="footer">
+      <section
+        class="bg-black flex flex-wrap gap-3 justify-between text-white px-16 pt-16 pb-32 sm:px-8 sm:py-8"
+      >
         <p>Tim Riling Law</p>
         <p>&copy; <span id="year"></span> All rights reserved.</p>
       </section>
